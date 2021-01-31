@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    color: #20253C;
+    height: 100vh;
+    width: 100%;
+    background-color: #EDEEF6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-height: 611px;
+    min-width: 975px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px #a4a8c7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerDiv {
+    min-height: 571px;
+    min-width: 931px;
+    background-color: #EDEEF6;
+    border-radius: 15px;
+}
+
+.content {
+    padding: 60px;
+}
+
+.calculatedContent {
+    padding: 50px 0;
+    
+}
+
+.inputRow {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.outputDiv {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+input, select {
+    width: 90%;
+    font-size: 1rem;
+}
+
+#submit {
+    font-size: 1rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #7885fa;
+    color: #FFFFFF;
+    outline: none;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+#submit:active {
+    background-color:  #525eca;
+}

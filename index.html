@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Loan Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="innerDiv">
+            <div class="content">
+                <h2>Car loan calculator</h2>
+                <div class="calculatedContent">
+                    <div class="inputRow">
+                        <div class="loanAmountDiv">
+                            <h4>Loan Amount: $<span id="loan">15,000</span></h4><br>
+                            <input type="range" id="loanInput" name="loanIput" min="5000" max="100000" value="15000" step="1000">
+                        </div>
+                        <div class="interestDiv">
+                            <h4>Interest Rate: <span id="interest">7</span>%</h4><br>
+                            <!-- <input type="range" id="interestInput" name="interestInput" min="0" max="20" value="3.8" step="0.1"> -->
+                            <input type="number" id="interestInput" name="interestInput" min="0" max="20" value="7">
+                        </div>
+                        <div class="loanPeriodDiv">
+                            <h4>Loan Period: <span id="loanPeriod">36</span> months</h4><br>
+                            <!-- <input type="range" id="monthsInput" name="monthsInput" min="0" max="84" value="48" step="1"> -->
+                            <select name="monthsInput" id="monthsInput">
+                                <option value="36">36 months</option>
+                                <option value="48">48 months</option>
+                                <option value="60">60 months</option>
+                                <option value="72">72 months</option>
+                                <option value="84">84 months</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="outputDiv">
+                        <h3>Estimated Monthly Payment</h3>
+                        <h3 id="monthlyPayment">$463.16</h3>
+                    </div>
+
+                    <button id="submit">Get Monthly Estimate</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
